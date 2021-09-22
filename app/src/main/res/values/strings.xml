@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">RegistrationProject</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_name">Имя</string>
+    <string name="et_email_hint">Логин</string>
+    <string name="et_password_hint">Пароль</string>
+    <string name="textView_enter">Войти</string>
+    <string name="textView_register">Зарегистрироваться</string>
+    <string name="registration_email">Email</string>
+    <string name="registration_name">Имя</string>
+    <string name="registration_enter_password">Введите пароль</string>
+    <string name="registration_password_again">Введите пароль еще раз</string>
+    <string name="registration_btn">Зарегистироваться</string>
+    <string name="authorization_error">Ошибка авторизации!</string>
+    <string name="request_error">Ошибка запроса на авторизацию!</string>
+    <string name="input_error">Ошибка ввода данных для авторизации</string>
+    <string name="menu_logout">Выход</string>
+    <string name="registration_error">Ошибка регистрации!</string>
+    <string name="registration_success">Регистрация прошла успешно!</string>
 </resources>
