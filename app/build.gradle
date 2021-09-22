@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 28
+
+    defaultConfig {
+        applicationId "edu.example.egorvivanov.registrationproject"
+        minSdk 21
+        targetSdk 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        // URL для доступа к API
+        debug {
+            buildConfigField 'String', 'SERVER_URL', '"https://android.academy.e-legion.com/api/"'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // OkHTTP library
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+    // Retrofit library
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // MVP - Moxy library
+    implementation 'com.arello-mobile:moxy:1.5.5'
+    annotationProcessor 'com.arello-mobile:moxy-compiler:1.5.5'
+    implementation 'com.arello-mobile:moxy-app-compat:1.5.5'
+
+    // RxJava library
+    implementation "io.reactivex.rxjava3:rxjava:3.1.1"
+    implementation "io.reactivex:rxandroid:3.1.1"
+}
