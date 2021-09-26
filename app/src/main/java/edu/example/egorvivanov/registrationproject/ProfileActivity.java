@@ -8,6 +8,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import edu.example.egorvivanov.registrationproject.authorization.AuthorizationActivity;
 import edu.example.egorvivanov.registrationproject.model.User;
 
 public class ProfileActivity extends AppCompatActivity {

@@ -3,16 +3,19 @@ package edu.example.egorvivanov.registrationproject.presenter;
 import android.text.TextUtils;
 import android.util.Patterns;
 
+import com.arellomobile.mvp.InjectViewState;
 import com.arellomobile.mvp.MvpPresenter;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 import edu.example.egorvivanov.registrationproject.R;
 import edu.example.egorvivanov.registrationproject.api.AcademyApi;
 import edu.example.egorvivanov.registrationproject.model.User;
 import edu.example.egorvivanov.registrationproject.view.RegistrationView;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
+@InjectViewState
 public class RegistrationPresenter extends MvpPresenter<RegistrationView> {
 
     private final AcademyApi mAcademyApi;

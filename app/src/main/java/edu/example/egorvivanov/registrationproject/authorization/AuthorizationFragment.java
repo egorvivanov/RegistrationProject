@@ -1,4 +1,4 @@
-package edu.example.egorvivanov.registrationproject;
+package edu.example.egorvivanov.registrationproject.authorization;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +16,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import edu.example.egorvivanov.registrationproject.ProfileActivity;
+import edu.example.egorvivanov.registrationproject.R;
+import edu.example.egorvivanov.registrationproject.RegistrationFragment;
 import edu.example.egorvivanov.registrationproject.api.ApiUtils;
 import edu.example.egorvivanov.registrationproject.model.ResponseData;
 import edu.example.egorvivanov.registrationproject.model.User;
